@@ -1,0 +1,26 @@
+@use '../abstract/_abstact-dir' as *;
+
+body {
+    margin : 0;
+    padding : 0;
+    background-color : $background !important;
+}
+
+.hero {
+    height : 95vh;
+}
+
+.calon {
+    height : 100vh;
+    background-color : $background-2;
+}
+
+.tatacara-item {
+    background-color : $background-2;
+    width : 100%;
+
+    img {
+        width : 100%;
+        height : auto;
+    }
+}
