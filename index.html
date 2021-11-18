@@ -34,36 +34,187 @@
     <main class="container hero d-flex flex-row justify-content-center align-items-center">
         <div class="col-lg-6">
             <h3 class="h3">Pemilihan Ketua <br> Himpunan Mahasiswa</h3>
-            <a href="#" class="button">Ayo Memilih!</a>
+            <a href="" class="btn btn-secondary mt-3 col-lg-4 text-light">Ayo Memilih!</a>
         </div>
         <div class="col-lg-3">
             <img src="./src/logo/HIMA INTERNAL edit.png" class="logo" alt="">
         </div>
     </main>
-    
+
     <!-- Calon Section -->
-    <main class="calon" id="#calon">
+    <main class="calon">
         <div class="container calon d-flex flex-column align-items-center justify-content-center">
             <h3 class="h3">Kenali Calon-Calonnya!</h3>
             <div class="d-flex flex-row justify-content-center">
                 <div class="col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
                     <img src="./src/calon/Calon 1/calon-1.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2">Alifia Sabila Putri</h5>
-                    <h6 class="h6 text-primary my-2">Lihat Profil</h6>
+                    <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonPertama" style="background:none;border:none;">Lihat Profil</button>
                 </div>
                 <div class="col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
                     <img src="./src/calon/Calon 2/calon-2.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2">Christopher Chow</h5>
-                    <h6 class="h6 text-primary my-2">Lihat Profil</h6>
+                    <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonKedua" style="background:none;border:none;">Lihat Profil</button>                
                 </div>
                 <div class="col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
                     <img src="./src/calon/Calon 3/calon-3.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2">Adissa Irawaty</h5>
-                    <h6 class="h6 text-primary my-2">Lihat Profil</h6>
+                    <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonKetiga" style="background:none;border:none;">Lihat Profil</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Modal Calon Pertama -->
+    <div class="modal fade" id="calonPertama" tabindex="-1" role="dialog" aria-labelledby="calonPertamaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calonPertama">Alifia Sabila Putri</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" height="auto" controls>
+                        <source src="./src/calon/Calon 1/calon-2.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="h4 text-primary">Visi</h4>
+                    <p class="p">
+                        Menjadikan Hima Humas sebagai wadah pengembangan diri dan kontribusi yang adaptif, 
+                        progresif, dan berkomitmen untuk memberi manfaat bagi publik internal dan eksternalnya
+                    </p>
+                    <h4 class="h4 text-primary">Misi</h4>
+                    <ol class="p">
+                        <li>Membangun lingkungan kerja yang cekatan dalam menghadapi segala situasi</li>
+                        <li>Menampung aspirasi dan inovasi anggota Hima Humas dalam pelaksanaan program kerja Himpunan yang sesuai dengan kebutuhannya</li>
+                        <li>Menciptakan sistem komunikasi organisasi yang terstruktur dan terbuka</li>
+                        <li>Mendorong partisipasi anggota Hima Humas dengan program kerja yang mendukung minat dan bakat serta pengembangan kompetensi dalam hal akademik, non akademik, dan keprofesian</li>
+                        <li>Mengembangkan kemitraan yang bermanfaat dengan publik eksternal</li>
+                        <li>Menjalin hubungan yang sistematis dan sinergis dengan publik internal dan eksternal Hima Humas</li>
+                    </ol>
+                    <h4 class="h4 text-primary">Budaya Kerja : GAVE</h4>
+                    <p class="p">
+                        <span class="h5 text-secondary">G</span>rowth
+                    </p>
+                    <p class="p">
+                        <span class="h5 text-secondary">A</span>gility
+                    </p>
+                    <p class="p">
+                        <span class="h5 text-secondary">v</span>isionary
+                    </p>
+                    <p class="p">
+                        <span class="h5 text-secondary">E</span>mpathy
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Calon Kedua -->
+    <div class="modal fade" id="calonKedua" tabindex="-1" role="dialog" aria-labelledby="calonKeduaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calonPertama">Christopher Chow</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" height="auto" controls>
+                        <source src="./src/calon/Calon 1/calon-2.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="h4 text-primary">Visi</h4>
+                    <p class="p">
+                        Hima Humas sebagai wadah pengembangan potensial diri anggota dengan menjunjung tinggi profesionalitas 
+                        dan kekeluargaan sehingga dapat menghasilkan banyak individu yang bermanfaat bagi internal dan eksternal
+                    </p>
+                    <h4 class="h4 text-primary">Misi</h4>
+                    <ol class="p">
+                        <li>Mempererat hubungan antara anggota dan pengurus untuk menjaga keharmonisan dan sinergi di Hima Humas</li>
+                        <li>Memaksimalkan setiap program kerja yang akan atau telah ada untuk meningkatkan potensi anggota Hima Humas</li>
+                        <li>Berkolaborasi dan membangun relasi dengan pihak eksternal Hima Humas dalam mewujudkan individu yang bermanfaat</li>
+                    </ol>
+                    <h4 class="h4 text-primary">Budaya Kerja : STAR</h4>
+                    <h5 class="h5 text-secondary">Service</h5>
+                    <p class="p">
+                        Hima Humas sebagai organisasi mahasiswa menyediakan berbagai program kerja dalam rangka memberikan 
+                        pelayanan bagi anggota Hima Humas
+                    </p>
+                    <h5 class="h5 text-secondary">Trust</h5>
+                    <p class="p">
+                        Dalam membangun suatu hubungan yang kuat antara anggota dan pengurus Hima Humas, maka diperlukan 
+                        rasa percaya antara individu dalam Hima Humas
+                    </p>
+                    <h5 class="h5 text-secondary">Autonomy</h5>
+                    <p class="p">
+                        Dengan rasa percaya yang diberikan, pengurus Hima Humas juga diberikan kebebasan dalam berekspresi 
+                        dan berinovasi dalam suatu rancangan atau program kerja yang akan berjalan
+                    </p>
+                    <h5 class="h5 text-secondary">Relaxed</h5>
+                    <p class="p">
+                        Pengurus Hima Humas akan memiliki kebebasan dan kenyamanan dalam melakukan hal produktif di Hima Humas
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Calon Ketiga -->
+    <div class="modal fade" id="calonKetiga" tabindex="-1" role="dialog" aria-labelledby="calonKetigaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calonPertama">Adissa Irawaty</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <video width="100%" height="auto" controls>
+                        <source src="./src/calon/Calon 1/calon-2.mp4" type="video/mp4">
+                    </video>
+                    <h4 class="h4 text-primary">Visi</h4>
+                    <p class="p">
+                        Mewujudkan Hima Humas sebagai ruang eksplorasi kreatif dan inovatif 
+                        bagi anggota Hima Humas dan menjalin komukiasi dengan internal dan eksternal Hima Humas
+                    </p>
+                    <h4 class="h4 text-primary">Misi</h4>
+                    <ol class="p">
+                        <li>Mendorong partisipasi aktif anggota Hima Humas pada setiap program kerja sesuai dengan potensi, minat, dan bakat</li>
+                        <li>Membangun internal organisasi Hima Humas menjadi tempat yang aman dan nyaman untuk berkembang bagi anggotanya</li>
+                        <li>Menjaga komunikasi dan koordinasi supaya menghasilkan dampak positif dengan eksternal Hima Humas</li>
+                    </ol>
+                    <h4 class="h4 text-primary">Budaya Kerja : SHARE</h4>
+                    <h5 class="h5 text-secondary">Sustain</h5>
+                    <p class="p">
+                        Hima Humas dapat mempertahankan kinerja ideal dan prestasi yang telah dimiliki
+                    </p>
+                    <h5 class="h5 text-secondary">Honest</h5>
+                    <p class="p">
+                        Hima Humas dapat menjalankan tugas dan fungsinya secara jujur
+                    </p>
+                    <h5 class="h5 text-secondary">Appreciate</h5>
+                    <p class="p">
+                        Hima Humas berusaha selalu mengapresiasi prestasi dan kinerja anggotanya
+                    </p>
+                    <h5 class="h5 text-secondary">Respect</h5>
+                    <p class="p">
+                        Setiap anggota Hima Humas menghargai hak dan kewajiban satu sama lain
+                    </p>
+                    <h5 class="h5 text-secondary">Empower</h5>
+                    <p class="p">
+                        Hima Humas dapat memberikan ruang bagi anggotanya untuk mengembangkan potensi terbaiknya
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
     <!-- Tata Cara Section-->
     <main>
