@@ -30,6 +30,12 @@
     font-weight : bold !important;
 }
 
+.h4-regular {
+    font-family : $primary-font !important;
+    font-size : 25px !important;
+    line-height : 36px !important;
+}
+
 .h5 {
     font-family : $secondary-font !important;
     font-size : 18px !important;
@@ -49,4 +55,12 @@
     font-family : $secondary-font !important;
     font-size : 18px !important;
     line-height : 25px !important;
+}
+
+.p-caption {
+    font-family : $secondary-font !important;
+    font-size : 14px;
+    line-height : 18px;
+    font-style : italic;
+    color : rgba(42, 42, 42, .7);
 }
