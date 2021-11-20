@@ -159,7 +159,7 @@ body {
   right: -100;
 }
 .hero .svg-desktop {
-  z-index: -1;
+  z-index: -400;
 }
 
 .calon {
