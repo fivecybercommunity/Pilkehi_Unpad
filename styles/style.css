@@ -84,6 +84,14 @@
   line-height: 51px !important;
   font-weight: bold !important;
 }
+@media (max-width: 576px) {
+  .h3 {
+    font-size: 25px !important;
+    line-height: 36px !important;
+    font-weight: bold !important;
+    text-align: center;
+  }
+}
 
 .h4 {
   font-family: "Montserrat", sans-serif !important;
@@ -119,6 +127,12 @@
   line-height: 25px !important;
 }
 
+.p-small {
+  font-family: "Open sans", sans-serif !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+
 .p-caption {
   font-family: "Open sans", sans-serif !important;
   font-size: 14px;
@@ -136,6 +150,17 @@ body {
 .hero {
   height: 95vh;
 }
+.hero .svg-top {
+  top: 0;
+  left: -100;
+}
+.hero .svg-bot {
+  bottom: 0;
+  right: -100;
+}
+.hero .svg-desktop {
+  z-index: -1;
+}
 
 .calon {
   height: 100vh;
@@ -149,6 +174,21 @@ body {
 .tatacara-item img {
   width: 100%;
   height: auto;
+}
+
+footer a, footer p {
+  text-decoration: none;
+  opacity: 80%;
+}
+
+.svg-desktop .svg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.svg-desktop .svg-bot {
+  bot: 0;
+  right: 0;
 }
 
 .button {
