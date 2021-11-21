@@ -77,6 +77,14 @@
   line-height: 72px !important;
   font-weight: bold !important;
 }
+@media (max-width: 576px) {
+  .h2 {
+    font-size: 36px !important;
+    line-height: 51px !important;
+    font-weight: bold !important;
+    text-align: center;
+  }
+}
 
 .h3 {
   font-family: "Montserrat", sans-serif !important;
@@ -99,11 +107,27 @@
   line-height: 36px !important;
   font-weight: bold !important;
 }
+@media (max-width: 576px) {
+  .h4 {
+    font-size: 25px !important;
+    line-height: 36px !important;
+    font-weight: bold !important;
+    text-align: center;
+  }
+}
 
 .h4-regular {
   font-family: "Montserrat", sans-serif !important;
   font-size: 25px !important;
   line-height: 36px !important;
+}
+@media (max-width: 576px) {
+  .h4-regular {
+    font-size: 18px !important;
+    line-height: 25px !important;
+    font-weight: 400 !important;
+    text-align: center;
+  }
 }
 
 .h5 {
@@ -139,6 +163,13 @@
   line-height: 18px;
   font-style: italic;
   color: rgba(42, 42, 42, 0.7);
+}
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body {
@@ -187,7 +218,7 @@ footer a, footer p {
   left: 0;
 }
 .svg-desktop .svg-bot {
-  bot: 0;
+  bottom: 0;
   right: 0;
 }
 

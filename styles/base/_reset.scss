@@ -1,5 +1,9 @@
 @use '../abstract/_abstact-dir' as *;
 
+* {
+    user-select : none;
+}
+
 body {
     margin : 0;
     padding : 0;
@@ -53,7 +57,7 @@ footer {
         left : 0;
     }
     .svg-bot {
-        bot : 0;
+        bottom : 0;
         right : 0;
     }
 }
