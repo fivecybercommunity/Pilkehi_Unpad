@@ -28,7 +28,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav col-lg-12 d-flex flex-lg-row justify-content-lg-end">
                     <li class="nav-item">
-                        <button type="button" class="nav-link text-light h6 me-3" data-bs-toggle="modal" data-bs-target="#calonPertama" style="background:none;border:none;">TATA CARA</button>
+                        <button type="button" class="nav-link text-light h6 me-3" data-bs-toggle="modal" data-bs-target="#tataCara" style="background:none;border:none;">TATA CARA</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="html/login.html" class="btn btn-outline-light h6 disabled">LOGOUT</a>
                     </li>
                 </ul>
             </div>
@@ -36,11 +39,11 @@
     </nav>
 
     <!-- Modal Tata Cara -->
-    <div class="modal fade" id="calonPertama" tabindex="-1" role="dialog" aria-labelledby="calonPertamaLabel" aria-hidden="true">
+    <div class="modal fade" id="tataCara" tabindex="-1" role="dialog" aria-labelledby="tataCaraLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="calonPertama">Tata Cara Pemilu</h5>
+                    <h5 class="modal-title" id="tataCaraLabel">Tata Cara Pemilu</h5>
                     <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="background:none;border:none;">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -152,18 +155,18 @@
     <main class="min-vh-100 bg-light py-5" id="calonKetua">
         <div class="container d-flex flex-column align-items-center justify-content-center">
             <div class="d-flex flex-column flex-lg-row justify-content-center">
-                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
-                    <img src="../src/calon/Calon 1/calon-1.png" alt="" class="logo my-2">
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-success pb-2 border-3" id="wrapperSatu">
+                    <img onclick="pilih(1)" src="../src/calon/Calon 1/calon-1.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2"><span class="text-primary h6">01</span> Alifia Sabila Putri</h5>
                     <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonPertama" style="background:none;border:none;">Lihat Profil</button>
                 </div>
-                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
-                    <img src="../src/calon/Calon 2/calon-2-rev.png" alt="" class="logo my-2">
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3" id="wrapperDua">
+                    <img onclick="pilih(2)" src="../src/calon/Calon 2/calon-2-rev.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2"><span class="text-primary h6">02</span> Christopher Chow</h5>
                     <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonKedua" style="background:none;border:none;">Lihat Profil</button>                
                 </div>
-                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
-                    <img src="../src/calon/Calon 3/calon-3-rev.png" alt="" class="logo my-2">
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3" id="wrapperTiga">
+                    <img onclick="pilih(3)" src="../src/calon/Calon 3/calon-3-rev.png" alt="" class="logo my-2">
                     <h5 class="h5 my-2"><span class="text-primary h6">03</span> Adissa Irawaty</h5>
                     <button type="button" class="h6 text-primary my-2" data-bs-toggle="modal" data-bs-target="#calonKetiga" style="background:none;border:none;">Lihat Profil</button>
                 </div>
@@ -323,5 +326,6 @@
 
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="vote.js"></script>
 </body>
 </html>
