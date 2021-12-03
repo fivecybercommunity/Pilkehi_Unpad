@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pemray 2021</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Google Chart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Calon 1', 126],
+          ['Calon 2', 48],
+          ['Calon 3', 78],
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.5,
+          height: 500,
+          legend: 'none',
+          fontSize: 16,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body class="bg-light">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+        <div class="container">
+            <!-- Brand Website -->
+            <a href="" class="navbar-brand d-flex flex-row align-items-center" aria-label="Logo Website">
+                <img class="me-4" src="src/logo/Logo Hima.png" alt="" srcset="">
+                <h6 class="h5 text-light">Hima Humas Unpad</h6>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Calon Section -->
+    <main class="min-vh-100 bg-light py-5" id="calonKetua">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <h3 class="h3">Hasil Pemilu Raya Hima Humas 2021</h3>
+            <div class="d-flex flex-column flex-lg-row justify-content-center">
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
+                    <img src="./src/calon/Calon 1/calon-1.png" alt="" class="logo my-2">
+                    <h5 class="h5 my-2"><span class="text-primary h6">01</span> Alifia Sabila Putri</h5>
+                    <h6 class="h4 text-primary">126 Suara</h6>
+                </div>
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
+                    <img src="./src/calon/Calon 2/calon-2-rev.png" alt="" class="logo my-2">
+                    <h5 class="h5 my-2"><span class="text-primary h6">02</span> Christopher Chow</h5>
+                    <h6 class="h4 text-primary">48 Suara</h6>                </div>
+                <div class="my-5 col-lg-3 mx-5 d-flex flex-column align-items-center border-bottom border-secondary pb-2 border-3">
+                    <img src="./src/calon/Calon 3/calon-3-rev.png" alt="" class="logo my-2">
+                    <h5 class="h5 my-2"><span class="text-primary h6">03</span> Adissa Irawaty</h5>
+                    <h6 class="h4 text-primary">78 Suara</h6>                </div>
+            </div>
+            <div class="col-lg-12 col-8 container d-flex justify-content-center align-items-center flex-column">
+                <div id="donutchart" class=""></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hasil -->
+    
+    
+
+    
+</body>
+</html>
